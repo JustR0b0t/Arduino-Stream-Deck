@@ -9,7 +9,7 @@
 // Bestimmte Lautstärke setzen
 // Speichern
 // Panic Button / Auf Desktop wechseln
-// und ein EasterEgg
+// und ein Easter Egg
 
 // Arduino Bibliotheken
 #include <Keyboard.h> // Erlaubt es dem Arduino sich als Tastatur auszugeben
