@@ -1,8 +1,8 @@
 # Arduino-Stream-Deck
 This is an experimental School Project, inspired by an Elgato Stream Deck.
 
-Its probably poorly written, so dont expect beautiful code. Im not a programmer.
-The comments are in german
+Its probably poorly written, so dont expect beautiful code. Im not a programmer and I never had something to do with Arduino before.
+The comments are written in german.
 
 Its using 6 Buttons on the Arduino to send inputs to the computer disquised as a Keyboard. 
 For additional functionality it used AutoHotKey.
