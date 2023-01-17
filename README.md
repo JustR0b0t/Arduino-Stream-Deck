@@ -1,5 +1,7 @@
 # Arduino-Stream-Deck
-This is an experimental School Project, inspired by an Elgato Stream Deck
+This is an experimental School Project, inspired by an Elgato Stream Deck.
+
+Its probably poorly written, so dont expect beautiful code. Im not a programmer
 
 Its using 6 Buttons on the Arduino to send inputs to the computer disquised as a Keyboard. 
 For additional functionality it used AutoHotKey.
@@ -11,9 +13,10 @@ An Arduino with an ATMega32U4 is needed. This Project used an Arduino Leonardo.
 <b>Setup:</b>
 * Wire everything correctly (Like seen in the Picture)
 * ![image](https://user-images.githubusercontent.com/77331598/212781758-2fd4095f-1f8b-4e87-8e91-cb5b1d56469d.png)
+* Picture made on TinkerCAD, the Arduino Uno is just visible because they had no Leonardo
 * Flash the Arduino Script
 * Run the AHK Script
 
 
 <b>License:</b>
-* I dont care what you do with the Stuff in this project, just dont claim you made it yourself ;D
+* I dont care what you do with the Stuff in this project, just dont claim you made it all by yourself ;D
