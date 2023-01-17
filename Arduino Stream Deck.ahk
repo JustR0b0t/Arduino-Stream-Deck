@@ -1,7 +1,7 @@
 ﻿#SingleInstance, force ; DEBUG nur ein Skript läuft auf einmal
 
 ; Startet ein Programm nach Wahl
-^+1:: Run "C:\Program Files\Mozilla Firefox\firefox.exe"
+^+1:: Run "C:\PROGRAMMPFAD\PROGRAMM.EXE"
 
 ; Discord Mikrofon ein & aus Schalter
 ifWinActive, ahk_exe Discord.exe ; Prüft ob Discord aktiv ist
