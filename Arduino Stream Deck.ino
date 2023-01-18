@@ -9,7 +9,7 @@
 // Bestimmte Lautstärke setzen
 // Speichern
 // Panic Button / Auf Desktop wechseln
-// und ein Easter Egg
+// und ein EasterEgg
 
 // Arduino Bibliotheken
 #include <Keyboard.h> // Erlaubt es dem Arduino sich als Tastatur auszugeben
@@ -62,11 +62,13 @@ void setup() {
   pinMode(pinD, INPUT);
   pinMode(pinE, INPUT);
   pinMode(pinF, INPUT);
+  pixels.setBrightness(25);
   pixels.begin(); // Initialisiert die LEDs
   pixels.show();
 }
 
 void loop() {
+
   // Überprüft ob die Knöpfe gedrückt sind
   // Knopf A
   if (digitalRead(pinA) == buttonState_highlow) {
@@ -81,8 +83,7 @@ void loop() {
       pixels.fill(colorA);
       pixels.show();
       delay(blink_delay);
-      pixels.clear();
-      pixels.show();
+      ClearShow();
       delay(blink_delay);
     }
     pixels.fill(colorA);
@@ -102,8 +103,7 @@ void loop() {
       pixels.fill(colorB);
       pixels.show();
       delay(blink_delay);
-      pixels.clear();
-      pixels.show();
+      ClearShow();
       delay(blink_delay);
     }
     pixels.fill(colorB);
@@ -123,8 +123,7 @@ void loop() {
       pixels.fill(colorC_copy);
       pixels.show();
       delay(blink_delay);
-      pixels.clear();
-      pixels.show();
+      ClearShow();
       delay(blink_delay);
     }
     pixels.fill(colorC_paste);
@@ -144,8 +143,7 @@ void loop() {
       pixels.fill(colorD);
       pixels.show();
       delay(blink_delay);
-      pixels.clear();
-      pixels.show();
+      ClearShow();
       delay(blink_delay);
     }
     pixels.fill(colorD);
@@ -164,8 +162,7 @@ void loop() {
       pixels.fill(colorE);
       pixels.show();
       delay(blink_delay);
-      pixels.clear();
-      pixels.show();
+      ClearShow();
       delay(blink_delay);
     }
     pixels.fill(colorE);
@@ -184,8 +181,7 @@ void loop() {
       pixels.fill(colorF);
       pixels.show();
       delay(blink_delay);
-      pixels.clear();
-      pixels.show();
+      ClearShow();
       delay(blink_delay);
     }
     pixels.fill(colorF);
@@ -204,181 +200,152 @@ void loop() {
         Keyboard.releaseAll();
         // Never Gonna Give you up Refrain Songtext
         // Zeitgleich wird auf dem PC Never gonna give you up geöffnet
-        pixels.clear();
-		    pixels.show();
+        ClearShow();
         delay(1000);
         pixels.setPixelColor(6, red);
         pixels.show();
         delay(180);// Jedes Wort in ms
-		    pixels.clear();
-		    pixels.show();
+        ClearShow();
         pixels.setPixelColor(7, red);
         pixels.show();
         delay(370);
-		    pixels.clear();
-		    pixels.show();
+        ClearShow();
         pixels.setPixelColor(7, red);
         pixels.show();
         delay(260);
-		    pixels.clear();
-		    pixels.show();
+        ClearShow();
         pixels.setPixelColor(1, red);
         pixels.show();
         delay(360);
-		    pixels.clear();
-		    pixels.show();
+        ClearShow();
         pixels.setPixelColor(5, red);
         pixels.show();
         delay(1140);
-		    pixels.clear();
-		    pixels.show();
+        ClearShow();
         pixels.setPixelColor(6, red);
         pixels.show();
         delay(210);
-	    	pixels.clear();
-	    	pixels.show();
+        ClearShow();
         pixels.setPixelColor(7, red);
         pixels.show();
         delay(200);
-	    	pixels.clear();
-	    	pixels.show();
+        ClearShow();
         pixels.setPixelColor(4, red);
         pixels.show();
         delay(500);
-	    	pixels.clear();
-	    	pixels.show();
+        ClearShow();
         pixels.setPixelColor(1, red);
         pixels.show();
         delay(380);
-	    	pixels.clear();
-	    	pixels.show();
+        ClearShow();
         pixels.setPixelColor(4, red);
         pixels.show();
         delay(770);
-	    	pixels.clear();
-	    	pixels.show();
+        ClearShow();
         pixels.setPixelColor(6, red);
         pixels.show();
         delay(280);
-	    	pixels.clear();
-	    	pixels.show();
+        ClearShow();
         pixels.setPixelColor(7, red);
         pixels.show();
         delay(290);
-	    	pixels.clear();
-        pixels.show();
+        ClearShow();
         pixels.setPixelColor(2, red);
         pixels.show();
         delay(470);
-	    	pixels.clear();
-	    	pixels.show();
+        ClearShow();
         pixels.setPixelColor(1, red);
         pixels.show();
         delay(850);
-	    	pixels.clear();
-	    	pixels.show();
+        ClearShow();
         pixels.setPixelColor(1, red);
         pixels.show();
         delay(570);
-	    	pixels.clear();
-    		pixels.show();
+        ClearShow();
         pixels.setPixelColor(4, red);
         pixels.show();
         delay(580);
-	    	pixels.clear();
-	    	pixels.show();
+        ClearShow();
         pixels.setPixelColor(1, red);
         pixels.show();
         delay(1140);
-	    	pixels.clear();
-	    	pixels.show();
+        ClearShow();
         pixels.setPixelColor(6, red);
         pixels.show();
         delay(340);
-    		pixels.clear();
-    		pixels.show();
+        ClearShow();
         pixels.setPixelColor(7, red);
         pixels.show();
         delay(300);
-    		pixels.clear();
-	    	pixels.show();
+        ClearShow();
         pixels.setPixelColor(5, red);
         pixels.show();
         delay(530);
-	    	pixels.clear();
-	    	pixels.show();
+        ClearShow();
         pixels.setPixelColor(1, red);
         pixels.show();
         delay(420);
-	    	pixels.clear();
-	    	pixels.show();
+        ClearShow();
         pixels.setPixelColor(3, red);
         pixels.show();
         delay(700);
-	    	pixels.clear();
-	    	pixels.show();
+        ClearShow();
         pixels.setPixelColor(6, red);
         pixels.show();
         delay(240);
-	    	pixels.clear();
-	    	pixels.show();
+        ClearShow();
         pixels.setPixelColor(7, red);
         pixels.show();
         delay(310);
-	    	pixels.clear();
-	    	pixels.show();
+        ClearShow();
         pixels.setPixelColor(3, red);
         pixels.show();
         delay(470);
-	    	pixels.clear();
-	    	pixels.show();
+        ClearShow();
         pixels.setPixelColor(7, red);
         pixels.show();
         delay(1000);
-	    	pixels.clear();
-	    	pixels.show();
+        ClearShow();
         pixels.setPixelColor(6, red);
         pixels.show();
         delay(290);
-	    	pixels.clear();
-	    	pixels.show();
+        ClearShow();
         pixels.setPixelColor(7, red);
         pixels.show();
         delay(370);
-		    pixels.clear();
-		    pixels.show();
+        ClearShow();
         pixels.setPixelColor(4, red);
         pixels.show();
         delay(690);
-	    	pixels.clear();
-	    	pixels.show();
+        ClearShow();
         pixels.setPixelColor(1, red);
         pixels.show();
         delay(880);
-	    	pixels.clear();
-	    	pixels.show();
+        ClearShow();
         pixels.setPixelColor(4, red);
         pixels.show();
         delay(310);
-	    	pixels.clear();
-	    	pixels.show();
+        ClearShow();
         pixels.setPixelColor(1, red);
         pixels.show();
         delay(500);
-	    	pixels.clear();
-	    	pixels.show();
+        ClearShow();
         pixels.setPixelColor(8, red);
         pixels.show();
         delay(420);
-    		pixels.clear();
-    		pixels.show();
+        ClearShow();
         pixels.setPixelColor(1, red);
         pixels.show();
         delay(450);
-	    	pixels.clear();
-	    	pixels.show();
+        ClearShow();
         delay(1000);
       }
     }
   }
+}
+
+void ClearShow() // Funktion um den LED-Streifen zurückzusetzen
+{
+  pixels.clear(); // Keine LED mehr aktiv
+  pixels.show(); // Initialisiere
 }
